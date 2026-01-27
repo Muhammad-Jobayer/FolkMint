@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="FolkMint ERD" id="folkERD">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- USERS -->
+        <mxCell id="users" value="USERS" style="shape=rectangle;fillColor=#FFCDD2;strokeColor=#C62828;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="180" height="220" as="geometry"/>
+        </mxCell>
+
+        <!-- PRODUCTS -->
+        <mxCell id="products" value="PRODUCTS" style="shape=rectangle;fillColor=#C8E6C9;strokeColor=#2E7D32;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="180" height="240" as="geometry"/>
+        </mxCell>
+
+        <!-- PRODUCT_IMAGES -->
+        <mxCell id="product_images" value="PRODUCT_IMAGES" style="shape=rectangle;fillColor=#B2EBF2;strokeColor=#00838F;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="50" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- ORDERS -->
+        <mxCell id="orders" value="ORDERS" style="shape=rectangle;fillColor=#FFE0B2;strokeColor=#EF6C00;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="350" width="180" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- ORDER_ITEMS -->
+        <mxCell id="order_items" value="ORDER_ITEMS" style="shape=rectangle;fillColor=#FFF9C4;strokeColor=#F9A825;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="350" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- CART -->
+        <mxCell id="cart" value="CART" style="shape=rectangle;fillColor=#B2EBF2;strokeColor=#00838F;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="550" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- CART_ITEMS -->
+        <mxCell id="cart_items" value="CART_ITEMS" style="shape=rectangle;fillColor=#80DEEA;strokeColor=#006064;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="550" width="180" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- PAYMENTS -->
+        <mxCell id="payments" value="PAYMENTS" style="shape=rectangle;fillColor=#D1C4E9;strokeColor=#6A1B9A;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="350" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- REVIEWS -->
+        <mxCell id="reviews" value="REVIEWS" style="shape=rectangle;fillColor=#FFCCBC;strokeColor=#D84315;fontColor=#000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="550" width="180" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Relationships diamonds -->
+
+        <!-- USERS -> ORDERS -->
+        <mxCell id="places" value="places" style="shape=rhombus;fillColor=#F48FB1;strokeColor=#AD1457;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_users_orders" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#AD1457;" edge="1" parent="1" source="users" target="places">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_places_orders" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#AD1457;" edge="1" parent="1" source="places" target="orders">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORDERS -> ORDER_ITEMS -->
+        <mxCell id="contains_order" value="contains_order" style="shape=rhombus;fillColor=#81D4FA;strokeColor=#0288D1;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="400" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_orders_items1" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#0288D1;" edge="1" parent="1" source="orders" target="contains_order">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_orders_items2" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#0288D1;" edge="1" parent="1" source="contains_order" target="order_items">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- PRODUCTS -> ORDER_ITEMS -->
+        <mxCell id="edge_products_orderitems" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#2E7D32;" edge="1" parent="1" source="products" target="contains_order">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ORDERS -> PAYMENTS -->
+        <mxCell id="paid_with" value="paid_with" style="shape=rhombus;fillColor=#CE93D8;strokeColor=#6A1B9A;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_orders_payments1" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#6A1B9A;" edge="1" parent="1" source="orders" target="paid_with">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_orders_payments2" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#6A1B9A;" edge="1" parent="1" source="paid_with" target="payments">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- CART -> CART_ITEMS -->
+        <mxCell id="contains_cart" value="contains_cart" style="shape=rhombus;fillColor=#4DB6AC;strokeColor=#00796B;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="550" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_cart1" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#00796B;" edge="1" parent="1" source="cart" target="contains_cart">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_cart2" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#00796B;" edge="1" parent="1" source="contains_cart" target="cart_items">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- PRODUCTS -> CART_ITEMS -->
+        <mxCell id="edge_products_cartitems" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#2E7D32;" edge="1" parent="1" source="products" target="contains_cart">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USERS -> REVIEWS -->
+        <mxCell id="writes" value="writes" style="shape=rhombus;fillColor=#FFCCBC;strokeColor=#D84315;fontColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="500" y="550" width="80" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_users_reviews1" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#D84315;" edge="1" parent="1" source="users" target="writes">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_users_reviews2" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#D84315;" edge="1" parent="1" source="writes" target="reviews">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- PRODUCTS -> REVIEWS -->
+        <mxCell id="edge_products_reviews" style="edgeStyle=elbowEdgeStyle;endArrow=block;strokeColor=#2E7D32;" edge="1" parent="1" source="products" target="writes">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
