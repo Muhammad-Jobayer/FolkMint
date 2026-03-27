@@ -1,6 +1,8 @@
-fastapi
-uvicorn
+PyJWT
+python-multipart
+passlib
+bcrypt
 python-dotenv
-mysql-connector-python
+psycopg2-binary
 pydantic
 email-validator

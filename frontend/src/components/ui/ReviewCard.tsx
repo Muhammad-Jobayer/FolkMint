@@ -1,9 +1,9 @@
 import React from 'react';
-import { Star } from 'lucide-react';
-import type { Review } from '../../types/schema';
+import { Star, User } from 'lucide-react';
+import type { Review, User as UserType } from '../../types/schema';
 
 interface ReviewCardProps {
-    review: Review & { user?: { username: string } };
+    review: Review & { username?: string, first_name?: string, user?: { username: string } };
 }
 
 export const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
@@ -18,21 +18,32 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
     };
 
     return (
-        <div className="bg-white p-6 rounded-lg border border-earth-100 shadow-sm">
-            <div className="flex items-start justify-between mb-3">
-                <div>
-                    <div className="flex items-center gap-2 mb-1">
-                        <span className="font-bold text-earth-900">
-                            {review.user?.username || 'Anonymous'}
-                        </span>
-                        <div className="flex gap-0.5">
-                            {renderStars(review.rating || 0)}
+        <div className="bg-dark-900/40 p-10 rounded-[2.5rem] border border-white/5 shadow-2xl backdrop-blur-md relative group overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/[0.01] blur-2xl rounded-full"></div>
+            <div className="flex items-start justify-between mb-8">
+                <div className="flex items-center gap-6">
+                    <div className="w-14 h-14 rounded-2xl bg-gold-500/10 flex items-center justify-center text-gold-500 border border-gold-500/20 shadow-inner">
+                        <User size={24} />
+                    </div>
+                    <div>
+                        <div className="flex items-center gap-4 mb-1">
+                            <span className="font-serif font-bold text-white text-xl italic tracking-tight">
+                                {review.first_name || review.username || review.user?.username || 'Legacy Collector'}
+                            </span>
+                            <div className="flex gap-1">
+                                {renderStars(review.rating || 0)}
+                            </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                             <div className="w-4 h-[1px] bg-gold-500/30"></div>
+                             <p className="text-[10px] text-gold-500/60 font-bold uppercase tracking-[0.3em]">Verified Purchase</p>
                         </div>
                     </div>
-                    <p className="text-sm text-earth-500">Verified Purchase</p>
                 </div>
             </div>
-            <p className="text-earth-700 leading-relaxed">{review.comment}</p>
+            <p className="text-slate-300 leading-relaxed text-lg font-serif italic border-l border-white/5 pl-8 mt-6">
+                "{review.comment}"
+            </p>
         </div>
     );
 };

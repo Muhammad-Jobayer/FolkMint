@@ -25,7 +25,7 @@ export const ReviewList: React.FC<ReviewListProps> = ({ reviews }) => {
             <Star
                 key={i}
                 size={20}
-                className={i < Math.round(rating) ? 'fill-yellow-500 text-yellow-500' : 'text-earth-300'}
+                className={i < Math.round(rating) ? 'fill-gold-500 text-gold-500' : 'text-white/5 fill-transparent'}
             />
         ));
     };
@@ -39,33 +39,35 @@ export const ReviewList: React.FC<ReviewListProps> = ({ reviews }) => {
     }
 
     return (
-        <div className="space-y-8">
+        <div className="space-y-16">
             {/* Rating Summary */}
-            <div className="bg-earth-50 p-8 rounded-lg">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-dark-900/60 p-12 rounded-[3.5rem] border border-white/5 shadow-2xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-gold-500/[0.02] blur-[100px] rounded-full group-hover:bg-gold-500/[0.05] transition-all duration-1000"></div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
                     {/* Average Rating */}
-                    <div className="text-center md:text-left">
-                        <div className="text-5xl font-bold text-earth-900 mb-2">
+                    <div className="text-center md:text-left flex flex-col justify-center">
+                        <div className="text-[10px] text-gold-500 font-bold uppercase tracking-[0.6em] italic mb-6">Collective Pulse</div>
+                        <div className="text-8xl font-serif font-bold text-white mb-6 italic tracking-tighter">
                             {averageRating.toFixed(1)}
                         </div>
-                        <div className="flex justify-center md:justify-start gap-1 mb-2">
+                        <div className="flex justify-center md:justify-start gap-1.5 mb-6">
                             {renderStars(averageRating)}
                         </div>
-                        <p className="text-earth-600">Based on {reviews.length} review{reviews.length !== 1 ? 's' : ''}</p>
+                        <p className="text-slate-400 font-serif italic text-lg opacity-80 pl-1">Based on {reviews.length} legacy testimonial{reviews.length !== 1 ? 's' : ''}</p>
                     </div>
 
                     {/* Rating Breakdown */}
-                    <div className="space-y-2">
+                    <div className="flex flex-col justify-center space-y-4">
                         {ratingCounts.map(({ star, count, percentage }) => (
-                            <div key={star} className="flex items-center gap-3">
-                                <span className="text-sm text-earth-600 w-12">{star} star</span>
-                                <div className="flex-1 h-2 bg-earth-200 rounded-full overflow-hidden">
+                            <div key={star} className="flex items-center gap-6 group/item">
+                                <span className="text-[10px] text-slate-500 font-black uppercase tracking-widest w-12">{star} Star</span>
+                                <div className="flex-1 h-1.5 bg-white/5 rounded-full overflow-hidden border border-white/5">
                                     <div
-                                        className="h-full bg-yellow-500 transition-all"
+                                        className="h-full bg-gradient-to-r from-gold-600 to-gold-400 shadow-[0_0_10px_rgba(251,191,36,0.2)] transition-all duration-1000"
                                         style={{ width: `${percentage}%` }}
                                     />
                                 </div>
-                                <span className="text-sm text-earth-600 w-8 text-right">{count}</span>
+                                <span className="text-[10px] text-gold-500/60 font-black w-8 text-right tabular-nums">{count}</span>
                             </div>
                         ))}
                     </div>
@@ -73,8 +75,12 @@ export const ReviewList: React.FC<ReviewListProps> = ({ reviews }) => {
             </div>
 
             {/* Reviews List */}
-            <div className="space-y-4">
-                <h3 className="text-xl font-bold text-earth-900">Customer Reviews</h3>
+            <div className="space-y-8">
+                <div className="flex items-center gap-6 mb-12">
+                     <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-white/5"></div>
+                     <h3 className="text-xs font-black text-slate-500 uppercase tracking-[0.5em] italic">Venerated Voices</h3>
+                     <div className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-white/5"></div>
+                </div>
                 {reviews.map((review) => (
                     <ReviewCard key={review.review_id} review={review} />
                 ))}

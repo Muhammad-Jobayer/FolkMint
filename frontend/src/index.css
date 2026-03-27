@@ -2,26 +2,23 @@
 @import "tailwindcss";
 
 @theme {
-  /* Rich Earth Palette */
-  --color-earth-50: #fcfaf8;
-  --color-earth-100: #f5f1ed;
-  --color-earth-200: #e8dfd5;
-  --color-earth-300: #d6c4b5;
-  --color-earth-400: #bf9f88;
-  --color-earth-500: #a67c5f;
-  --color-earth-600: #8c634a;
-  --color-earth-700: #75513d;
-  --color-earth-800: #5c4132;
-  --color-earth-900: #2d241e;
-  /* Deep Charcoal Earth */
-
-  /* Vibrant Bamboo & Accents */
-  --color-bamboo-50: #f7f9f3;
-  --color-bamboo-100: #eef4e8;
-  --color-bamboo-200: #dbe9d3;
-  --color-bamboo-500: #8ba870;
-  --color-bamboo-600: #6b8a51;
-  --color-bamboo-700: #526b3e;
+  /* Elevated Heritage Palette - Lightened for better comfort */
+  --color-dark-950: #2d333d;
+  --color-dark-900: #3b424f;
+  --color-dark-800: #4a5363;
+  --color-dark-700: #5c687d;
+  --color-dark-600: #717d91;
+  
+  /* Accent: Golden Sun */
+  --color-gold-50: #fffbeb;
+  --color-gold-100: #fef3c7;
+  --color-gold-400: #fbbf24;
+  --color-gold-500: #f59e0b;
+  --color-gold-600: #d97706;
+  
+  /* Accent: Teal Waters */
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
 
   /* Typography */
   --font-serif: "Playfair Display", serif;
@@ -30,49 +27,90 @@
 
 @layer base {
   body {
-    @apply bg-earth-50 text-earth-900 font-sans selection:bg-bamboo-200 transition-colors duration-500;
-    background-image:
-      radial-gradient(at 0% 0%, hsla(25, 20%, 95%, 1) 0, transparent 50%),
-      radial-gradient(at 50% 0%, hsla(20, 10%, 90%, 1) 0, transparent 50%),
-      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238c634a' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    @apply bg-dark-950 text-white font-sans selection:bg-gold-500/30 transition-colors duration-500;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(215, 30%, 55%, 1) 0, transparent 70%),
+      radial-gradient(at 100% 0%, hsla(35, 35%, 50%, 1) 0, transparent 70%),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-serif tracking-tight leading-tight;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight leading-tight text-white;
   }
 }
 
 @layer components {
   .premium-card {
-    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl shadow-earth-900/5 rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-earth-900/10;
+    @apply bg-dark-900/40 backdrop-blur-xl border border-white/5 shadow-2xl rounded-2xl overflow-hidden transition-all duration-700 hover:-translate-y-2 hover:bg-dark-800/60 hover:border-gold-500/20 hover:shadow-gold-500/5;
+  }
+  
+  .dope-button {
+    @apply relative overflow-hidden bg-gold-500 text-dark-950 px-8 py-3 rounded-xl font-bold transition-all duration-500 hover:bg-gold-400 hover:scale-105 hover:shadow-lg hover:shadow-gold-500/20 active:scale-95 flex items-center justify-center gap-2;
   }
 
-  .dope-button {
-    @apply relative overflow-hidden bg-earth-900 text-white px-8 py-3 rounded-full font-bold transition-all duration-300 hover:bg-earth-800 hover:scale-105 active:scale-95 shadow-lg;
+  .glass-button {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 text-slate-200 hover:text-white hover:bg-white/10 hover:border-gold-500/30 px-5 py-2.5 rounded-xl font-semibold transition-all duration-300 active:scale-95;
+  }
+
+  .gold-button {
+    @apply bg-gold-500 text-dark-950 px-10 py-5 rounded-[2rem] font-black uppercase tracking-[0.3em] transition-all duration-700 hover:bg-gold-400 hover:shadow-[0_20px_60px_rgba(251,191,36,0.3)] hover:-translate-y-1 active:scale-95 flex items-center justify-center gap-4 text-[10px] shadow-2xl;
   }
 
   .cultural-text {
-    @apply font-serif italic text-earth-600;
+    @apply font-serif italic text-gold-400/80;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-400 via-gold-100 to-gold-500;
   }
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
+@keyframes ritual-pulse {
+  0% { transform: scale(1); opacity: 0.1; }
+  50% { transform: scale(1.05); opacity: 0.2; }
+  100% { transform: scale(1); opacity: 0.1; }
+}
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.ritual-pulse {
+  animation: ritual-pulse 5s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in {
   animation: fade-in 0.8s ease-out forwards;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Artisan Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-dark-700/50 hover:bg-gold-500/40 rounded-full transition-colors;
 }

@@ -1,0 +1,1820 @@
+[
+  {
+    "name": "Art Piece 1",
+    "category": "art",
+    "image_url": "/images/art/art_1.jpg",
+    "price": 763,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 2",
+    "category": "art",
+    "image_url": "/images/art/art_2.jpg",
+    "price": 2978,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 3",
+    "category": "art",
+    "image_url": "/images/art/art_3.jpg",
+    "price": 3054,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 4",
+    "category": "art",
+    "image_url": "/images/art/art_4.jpg",
+    "price": 2062,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 5",
+    "category": "art",
+    "image_url": "/images/art/art_5.jpg",
+    "price": 1380,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 6",
+    "category": "art",
+    "image_url": "/images/art/art_6.jpg",
+    "price": 4026,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 7",
+    "category": "art",
+    "image_url": "/images/art/art_7.jpg",
+    "price": 4070,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 8",
+    "category": "art",
+    "image_url": "/images/art/art_8.jpg",
+    "price": 2065,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 9",
+    "category": "art",
+    "image_url": "/images/art/art_9.jpg",
+    "price": 1622,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 10",
+    "category": "art",
+    "image_url": "/images/art/art_10.jpg",
+    "price": 1841,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 11",
+    "category": "art",
+    "image_url": "/images/art/art_11.jpg",
+    "price": 1102,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 12",
+    "category": "art",
+    "image_url": "/images/art/art_12.jpg",
+    "price": 1179,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 13",
+    "category": "art",
+    "image_url": "/images/art/art_13.jpg",
+    "price": 3816,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 14",
+    "category": "art",
+    "image_url": "/images/art/art_14.jpg",
+    "price": 4704,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Art Piece 15",
+    "category": "art",
+    "image_url": "/images/art/art_15.jpg",
+    "price": 3083,
+    "description": "Handcrafted art item from local artisans.",
+    "seller_id": 1,
+    "category_id": 5
+  },
+  {
+    "name": "Bamboo Craft Piece 1",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_1.jpg",
+    "price": 1286,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 2",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_2.jpg",
+    "price": 1293,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 3",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_3.jpg",
+    "price": 505,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 4",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_4.jpg",
+    "price": 215,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 5",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_5.jpg",
+    "price": 1669,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 6",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_6.jpg",
+    "price": 1949,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 7",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_7.jpg",
+    "price": 242,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 8",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_8.jpg",
+    "price": 1524,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 9",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_9.jpg",
+    "price": 1991,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 10",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_10.jpg",
+    "price": 504,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 11",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_11.jpg",
+    "price": 1837,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 12",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_12.jpg",
+    "price": 1263,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 13",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_13.jpg",
+    "price": 1898,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 14",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_14.jpg",
+    "price": 1951,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 15",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_15.jpg",
+    "price": 556,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 16",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_16.jpg",
+    "price": 839,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 17",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_17.jpg",
+    "price": 1256,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 18",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_18.jpg",
+    "price": 754,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 19",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_19.jpg",
+    "price": 1408,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 20",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_20.jpg",
+    "price": 1914,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 21",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_21.jpg",
+    "price": 692,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 22",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_22.jpg",
+    "price": 1938,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 23",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_23.jpg",
+    "price": 1142,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 24",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_24.jpg",
+    "price": 1353,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 25",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_25.jpg",
+    "price": 451,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 26",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_26.jpg",
+    "price": 966,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 27",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_27.jpg",
+    "price": 1266,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 28",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_28.jpg",
+    "price": 338,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 29",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_29.jpg",
+    "price": 460,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 30",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_30.jpg",
+    "price": 482,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 31",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_31.jpg",
+    "price": 670,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 32",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_32.jpg",
+    "price": 394,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 33",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_33.jpg",
+    "price": 559,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 34",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_34.jpg",
+    "price": 642,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 35",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_35.jpg",
+    "price": 1914,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Bamboo Craft Piece 36",
+    "category": "bamboo_craft",
+    "image_url": "/images/bamboo_craft/bamboo_craft_36.jpg",
+    "price": 1216,
+    "description": "Handcrafted bamboo craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 6
+  },
+  {
+    "name": "Folk Jewelry Piece 1",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_1.jpg",
+    "price": 774,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 2",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_2.jpg",
+    "price": 3367,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 3",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_3.jpg",
+    "price": 3616,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 4",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_4.jpg",
+    "price": 1060,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 5",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_5.jpg",
+    "price": 3063,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 6",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_6.jpg",
+    "price": 2593,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 7",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_7.jpg",
+    "price": 357,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 8",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_8.jpg",
+    "price": 3187,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 9",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_9.jpg",
+    "price": 2448,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 10",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_10.jpg",
+    "price": 463,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 11",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_11.jpg",
+    "price": 1970,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 12",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_12.jpg",
+    "price": 3326,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 13",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_13.jpg",
+    "price": 3615,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 14",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_14.jpg",
+    "price": 2127,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 15",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_15.jpg",
+    "price": 3252,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 16",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_16.jpg",
+    "price": 3067,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 17",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_17.jpg",
+    "price": 2383,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 18",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_18.jpg",
+    "price": 1300,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 19",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_19.jpg",
+    "price": 3143,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 20",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_20.jpg",
+    "price": 873,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Jewelry Piece 21",
+    "category": "folk_jewelry",
+    "image_url": "/images/folk_jewelry/folk_jewelry_21.jpg",
+    "price": 1182,
+    "description": "Handcrafted folk jewelry item from local artisans.",
+    "seller_id": 1,
+    "category_id": 7
+  },
+  {
+    "name": "Folk Musical Stuff Piece 1",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_1.jpg",
+    "price": 7371,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 2",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_2.jpg",
+    "price": 1387,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 3",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_3.jpg",
+    "price": 3698,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 4",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_4.jpg",
+    "price": 6043,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 5",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_5.jpg",
+    "price": 5635,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 6",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_6.jpg",
+    "price": 13379,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 7",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_7.jpg",
+    "price": 13701,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 8",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_8.jpg",
+    "price": 5056,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 9",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_9.jpg",
+    "price": 11909,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 10",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_10.jpg",
+    "price": 13540,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 11",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_11.jpg",
+    "price": 12929,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 12",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_12.jpg",
+    "price": 3629,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 13",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_13.jpg",
+    "price": 7305,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 14",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_14.jpg",
+    "price": 9512,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 15",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_15.jpg",
+    "price": 12687,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 16",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_16.jpg",
+    "price": 7292,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 17",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_17.jpg",
+    "price": 12500,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 18",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_18.jpg",
+    "price": 3792,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 19",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_19.jpg",
+    "price": 2421,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 20",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_20.jpg",
+    "price": 9423,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Musical Stuff Piece 21",
+    "category": "folk_musical_stuff",
+    "image_url": "/images/folk_musical_stuff/folk_musical_stuff_21.jpg",
+    "price": 11759,
+    "description": "Handcrafted folk musical stuff item from local artisans.",
+    "seller_id": 1,
+    "category_id": 8
+  },
+  {
+    "name": "Folk Textile Piece 1",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_1.jpg",
+    "price": 1573,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 2",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_2.jpg",
+    "price": 2698,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 3",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_3.jpg",
+    "price": 14341,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 4",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_4.jpg",
+    "price": 20498,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 5",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_5.jpg",
+    "price": 18170,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 6",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_6.jpg",
+    "price": 6754,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 7",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_7.jpg",
+    "price": 11076,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 8",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_8.jpg",
+    "price": 19405,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 9",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_9.jpg",
+    "price": 6822,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 10",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_10.jpg",
+    "price": 13340,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 11",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_11.jpg",
+    "price": 18800,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 12",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_12.jpg",
+    "price": 10695,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 13",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_13.jpg",
+    "price": 5271,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 14",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_14.jpg",
+    "price": 22957,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 15",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_15.jpg",
+    "price": 9349,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 16",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_16.jpg",
+    "price": 17554,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 17",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_17.jpg",
+    "price": 7908,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 18",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_18.jpg",
+    "price": 7889,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 19",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_19.jpg",
+    "price": 12204,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 20",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_20.jpg",
+    "price": 13635,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 21",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_21.jpg",
+    "price": 22621,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 22",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_22.jpg",
+    "price": 11742,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 23",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_23.jpg",
+    "price": 6453,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 24",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_24.jpg",
+    "price": 16574,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 25",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_25.jpg",
+    "price": 4918,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Folk Textile Piece 26",
+    "category": "folk_textile",
+    "image_url": "/images/folk_textile/folk_textile_26.jpg",
+    "price": 5953,
+    "description": "Handcrafted folk textile item from local artisans.",
+    "seller_id": 1,
+    "category_id": 9
+  },
+  {
+    "name": "Handicraft Piece 1",
+    "category": "handicraft",
+    "image_url": "/images/handicraft/handicraft_1.jpg",
+    "price": 1901,
+    "description": "Handcrafted handicraft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 10
+  },
+  {
+    "name": "Handicraft Piece 2",
+    "category": "handicraft",
+    "image_url": "/images/handicraft/handicraft_2.jpg",
+    "price": 2879,
+    "description": "Handcrafted handicraft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 10
+  },
+  {
+    "name": "Handicraft Piece 3",
+    "category": "handicraft",
+    "image_url": "/images/handicraft/handicraft_3.jpg",
+    "price": 871,
+    "description": "Handcrafted handicraft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 10
+  },
+  {
+    "name": "Handicraft Piece 4",
+    "category": "handicraft",
+    "image_url": "/images/handicraft/handicraft_4.jpg",
+    "price": 860,
+    "description": "Handcrafted handicraft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 10
+  },
+  {
+    "name": "Handicraft Piece 5",
+    "category": "handicraft",
+    "image_url": "/images/handicraft/handicraft_5.jpg",
+    "price": 2593,
+    "description": "Handcrafted handicraft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 10
+  },
+  {
+    "name": "Handicraft Piece 6",
+    "category": "handicraft",
+    "image_url": "/images/handicraft/handicraft_6.jpg",
+    "price": 1277,
+    "description": "Handcrafted handicraft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 10
+  },
+  {
+    "name": "Handicraft Piece 7",
+    "category": "handicraft",
+    "image_url": "/images/handicraft/handicraft_7.jpg",
+    "price": 1208,
+    "description": "Handcrafted handicraft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 10
+  },
+  {
+    "name": "Handicraft Piece 8",
+    "category": "handicraft",
+    "image_url": "/images/handicraft/handicraft_8.jpg",
+    "price": 466,
+    "description": "Handcrafted handicraft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 10
+  },
+  {
+    "name": "Home Decor Piece 1",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_1.jpg",
+    "price": 1987,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 2",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_2.jpg",
+    "price": 6131,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 3",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_3.jpg",
+    "price": 6239,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 4",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_4.jpg",
+    "price": 5409,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 5",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_5.jpg",
+    "price": 3869,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 6",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_6.jpg",
+    "price": 3345,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 7",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_7.jpg",
+    "price": 2761,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 8",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_8.jpg",
+    "price": 5053,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 9",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_9.jpg",
+    "price": 3424,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 10",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_10.jpg",
+    "price": 2786,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 11",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_11.jpg",
+    "price": 5910,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 12",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_12.jpg",
+    "price": 2127,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 13",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_13.jpg",
+    "price": 5926,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 14",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_14.jpg",
+    "price": 3230,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 15",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_15.jpg",
+    "price": 2410,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 16",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_16.jpg",
+    "price": 5505,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 17",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_17.jpg",
+    "price": 2330,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 18",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_18.jpg",
+    "price": 2008,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 19",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_19.jpg",
+    "price": 4243,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 20",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_20.jpg",
+    "price": 3257,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 21",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_21.jpg",
+    "price": 4089,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 22",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_22.jpg",
+    "price": 5529,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 23",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_23.jpg",
+    "price": 7511,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 24",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_24.jpg",
+    "price": 3581,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 25",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_25.jpg",
+    "price": 7146,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 26",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_26.jpg",
+    "price": 6864,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 27",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_27.jpg",
+    "price": 4916,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 28",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_28.jpg",
+    "price": 3265,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 29",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_29.jpg",
+    "price": 3408,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 30",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_30.jpg",
+    "price": 1127,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Home Decor Piece 31",
+    "category": "home_decor",
+    "image_url": "/images/home_decor/home_decor_31.jpg",
+    "price": 2379,
+    "description": "Handcrafted home decor item from local artisans.",
+    "seller_id": 1,
+    "category_id": 11
+  },
+  {
+    "name": "Pottery And Clay Piece 1",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_1.jpg",
+    "price": 806,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 2",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_2.jpg",
+    "price": 1738,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 3",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_3.jpg",
+    "price": 902,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 4",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_4.jpg",
+    "price": 2496,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 5",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_5.jpg",
+    "price": 2484,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 6",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_6.jpg",
+    "price": 1836,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 7",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_7.jpg",
+    "price": 2349,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 8",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_8.jpg",
+    "price": 2451,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 9",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_9.jpg",
+    "price": 1441,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 10",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_10.jpg",
+    "price": 417,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 11",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_11.jpg",
+    "price": 933,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 12",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_12.jpg",
+    "price": 1204,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Pottery And Clay Piece 13",
+    "category": "pottery_and_clay",
+    "image_url": "/images/pottery_and_clay/pottery_and_clay_13.jpg",
+    "price": 1479,
+    "description": "Handcrafted pottery and clay item from local artisans.",
+    "seller_id": 1,
+    "category_id": 12
+  },
+  {
+    "name": "Stone Craft Piece 1",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_1.jpg",
+    "price": 2685,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 2",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_2.jpg",
+    "price": 3025,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 3",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_3.jpg",
+    "price": 2075,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 4",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_4.jpg",
+    "price": 960,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 5",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_5.jpg",
+    "price": 5390,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 6",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_6.jpg",
+    "price": 1253,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 7",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_7.jpg",
+    "price": 4124,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 8",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_8.jpg",
+    "price": 654,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 9",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_9.jpg",
+    "price": 1905,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 10",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_10.jpg",
+    "price": 2915,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 11",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_11.jpg",
+    "price": 1642,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 12",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_12.jpg",
+    "price": 4708,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 13",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_13.jpg",
+    "price": 3553,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 14",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_14.jpg",
+    "price": 5628,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Stone Craft Piece 15",
+    "category": "stone_craft",
+    "image_url": "/images/stone_craft/stone_craft_15.jpg",
+    "price": 4518,
+    "description": "Handcrafted stone craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 13
+  },
+  {
+    "name": "Wooden Craft Piece 1",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_1.jpg",
+    "price": 4263,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 2",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_2.jpg",
+    "price": 4166,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 3",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_3.jpg",
+    "price": 2288,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 4",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_4.jpg",
+    "price": 1315,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 5",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_5.jpg",
+    "price": 6935,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 6",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_6.jpg",
+    "price": 6994,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 7",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_7.jpg",
+    "price": 4633,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 8",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_8.jpg",
+    "price": 2019,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 9",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_9.jpg",
+    "price": 2605,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 10",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_10.jpg",
+    "price": 1131,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 11",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_11.jpg",
+    "price": 6363,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 12",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_12.jpg",
+    "price": 6131,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 13",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_13.jpg",
+    "price": 3418,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 14",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_14.jpg",
+    "price": 5477,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 15",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_15.jpg",
+    "price": 4964,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  },
+  {
+    "name": "Wooden Craft Piece 16",
+    "category": "wooden_craft",
+    "image_url": "/images/wooden_craft/wooden_craft_16.jpg",
+    "price": 3346,
+    "description": "Handcrafted wooden craft item from local artisans.",
+    "seller_id": 1,
+    "category_id": 14
+  }
+]

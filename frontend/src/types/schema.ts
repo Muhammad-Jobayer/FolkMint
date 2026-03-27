@@ -29,6 +29,9 @@ export interface Product {
     description: string | null;
     base_price: number | null;
     category_id: number | null;
+    averageRating?: number;
+    totalReviews?: number;
+    images?: string[];
     // Relations to be populated in frontend
     category?: Category;
     variants?: ProductVariant[];

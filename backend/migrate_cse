@@ -1,0 +1,146 @@
+-- 
+-- Adds Triggers, Functions, and Procedures to the FolkMint database
+
+-- 1. Shadow Table for logging price changes (Trigger Requirement)
+CREATE TABLE IF NOT EXISTS product_price_history (
+    history_id SERIAL PRIMARY KEY,
+    product_id INT NOT NULL REFERENCES product(product_id) ON DELETE CASCADE,
+    old_price DECIMAL(10,2) NOT NULL,
+    new_price DECIMAL(10,2) NOT NULL,
+    changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 1.1 Trigger Function to log price changes
+CREATE OR REPLACE FUNCTION log_price_change()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF OLD.base_price <> NEW.base_price THEN
+        INSERT INTO product_price_history (product_id, old_price, new_price)
+        VALUES (OLD.product_id, OLD.base_price, NEW.base_price);
+    END IF;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- 1.2 The Trigger itself (Shadow logging)
+DROP TRIGGER IF EXISTS trigger_price_log ON product;
+CREATE TRIGGER trigger_price_log
+AFTER UPDATE ON product
+FOR EACH ROW
+EXECUTE PROCEDURE log_price_change();
+
+-- 2. Stored Function for computed statistical value (Function Requirement)
+-- Returns the average rating for a given product
+CREATE OR REPLACE FUNCTION get_product_average_rating(p_id INT)
+RETURNS DECIMAL(3,2) AS $$
+DECLARE
+    avg_rating DECIMAL(3,2);
+BEGIN
+    SELECT AVG(rating)::DECIMAL(3,2) INTO avg_rating 
+    FROM review 
+    WHERE product_id = p_id;
+    
+    RETURN COALESCE(avg_rating, 0.00);
+END;
+$$ LANGUAGE plpgsql;
+
+-- 3. Stored Procedure for multi-step workflow (Procedure Requirement)
+-- Handles placing an order, updating stock, and clearing cart in ONE transaction
+-- Now accepts JSONB for multiple items
+CREATE OR REPLACE PROCEDURE place_complete_order(
+    p_user_id INT,
+    p_address_id INT,
+    p_items_json JSONB
+)
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    v_order_id INT;
+    v_item RECORD;
+    v_total DECIMAL(10,2) := 0;
+BEGIN
+    -- 3.1 First calculate total
+    FOR v_item IN SELECT * FROM jsonb_to_recordset(p_items_json) AS x(variant_id INT, quantity INT, price DECIMAL(10,2))
+    LOOP
+        v_total := v_total + (v_item.price * v_item.quantity);
+    END LOOP;
+
+    -- 3.2 Create the Order
+    INSERT INTO orders (user_id, address_id, total_amount, status)
+    VALUES (p_user_id, p_address_id, v_total, 'delivered')
+    RETURNING order_id INTO v_order_id;
+    
+    -- 3.3 Process each item
+    FOR v_item IN SELECT * FROM jsonb_to_recordset(p_items_json) AS x(variant_id INT, quantity INT, price DECIMAL(10,2))
+    LOOP
+        -- Add the Order Item
+        INSERT INTO order_item (order_id, variant_id, quantity, price_at_purchase)
+        VALUES (v_order_id, v_item.variant_id, v_item.quantity, v_item.price);
+
+        -- Update Stock
+        UPDATE product_variant 
+        SET stock_quantity = stock_quantity - v_item.quantity
+        WHERE variant_id = v_item.variant_id;
+    END LOOP;
+    
+    -- 3.4 Clear Cart (Both items and the main cart record)
+    DELETE FROM cart_item ci
+    USING cart c
+    WHERE ci.cart_id = c.cart_id 
+    AND c.user_id = p_user_id;
+    
+    DELETE FROM cart WHERE user_id = p_user_id;
+
+END;
+$$;
+
+-- 4. Analytics Functions (Requirement Enhancement)
+
+-- Monthly Revenue Function (Complex Join/Aggregation)
+CREATE OR REPLACE FUNCTION get_monthly_revenue()
+RETURNS TABLE(month TEXT, revenue DECIMAL) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT 
+        TO_CHAR(created_at, 'YYYY-MM') AS month,
+        SUM(total_amount)::DECIMAL AS revenue
+    FROM orders
+    GROUP BY 1
+    ORDER BY 1 DESC;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Top Selling Products (Complex Join/Aggregation)
+CREATE OR REPLACE FUNCTION get_top_selling_products(p_limit INT)
+RETURNS TABLE(product_name VARCHAR, total_sold BIGINT) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT 
+        p.name,
+        SUM(oi.quantity)::BIGINT AS total_sold
+    FROM order_item oi
+    JOIN product_variant pv ON oi.variant_id = pv.variant_id
+    JOIN product p ON pv.product_id = p.product_id
+    GROUP BY p.name
+    ORDER BY total_sold DESC
+    LIMIT p_limit;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Best Performing Artisans
+CREATE OR REPLACE FUNCTION get_best_artisans(p_limit INT)
+RETURNS TABLE(artisan_name TEXT, total_sales DECIMAL) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT 
+        u.first_name || ' ' || u.last_name AS artisan_name,
+        SUM(oi.quantity * oi.price_at_purchase)::DECIMAL AS total_sales
+    FROM order_item oi
+    JOIN product_variant pv ON oi.variant_id = pv.variant_id
+    JOIN product p ON pv.product_id = p.product_id
+    JOIN users u ON p.seller_id = u.user_id
+    GROUP BY artisan_name
+    ORDER BY total_sales DESC
+    LIMIT p_limit;
+END;
+$$ LANGUAGE plpgsql;

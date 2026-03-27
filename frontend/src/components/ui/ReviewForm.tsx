@@ -35,13 +35,13 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
     };
 
     return (
-        <div className="bg-white p-8 rounded-lg border border-earth-200 shadow-sm">
-            <h3 className="text-2xl font-bold text-earth-900 mb-6">Write a Review</h3>
+        <div className="premium-card p-8">
+            <h3 className="text-2xl font-bold text-white mb-6">Write a Review</h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Star Rating */}
                 <div>
-                    <label className="block text-sm font-bold text-earth-900 mb-2">
+                    <label className="block text-sm font-bold text-white/80 mb-2">
                         Your Rating *
                     </label>
                     <div className="flex gap-2">
@@ -52,14 +52,14 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
                                 onClick={() => setRating(star)}
                                 onMouseEnter={() => setHoveredRating(star)}
                                 onMouseLeave={() => setHoveredRating(0)}
-                                className="transition-transform hover:scale-110"
+                                className="transition-all hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(234,179,8,0.5)]"
                             >
                                 <Star
                                     size={32}
                                     className={
                                         star <= (hoveredRating || rating)
-                                            ? 'fill-yellow-500 text-yellow-500'
-                                            : 'text-earth-300'
+                                            ? 'fill-yellow-400 text-yellow-400 drop-shadow-md'
+                                            : 'text-white/20'
                                     }
                                 />
                             </button>
@@ -69,7 +69,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
 
                 {/* Username */}
                 <div>
-                    <label htmlFor="username" className="block text-sm font-bold text-earth-900 mb-2">
+                    <label htmlFor="username" className="block text-sm font-bold text-white/80 mb-2">
                         Your Name *
                     </label>
                     <input
@@ -77,7 +77,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
                         id="username"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        className="w-full px-4 py-3 border border-earth-300 rounded-md focus:ring-2 focus:ring-bamboo-500 focus:border-bamboo-500 outline-none"
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:ring-2 focus:ring-bamboo-500/50 focus:border-bamboo-500/50 outline-none transition-all placeholder-white/30"
                         placeholder="Enter your name"
                         required
                     />
@@ -85,7 +85,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
 
                 {/* Comment */}
                 <div>
-                    <label htmlFor="comment" className="block text-sm font-bold text-earth-900 mb-2">
+                    <label htmlFor="comment" className="block text-sm font-bold text-white/80 mb-2">
                         Your Review *
                     </label>
                     <textarea
@@ -93,7 +93,7 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
                         value={comment}
                         onChange={(e) => setComment(e.target.value)}
                         rows={5}
-                        className="w-full px-4 py-3 border border-earth-300 rounded-md focus:ring-2 focus:ring-bamboo-500 focus:border-bamboo-500 outline-none resize-none"
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:ring-2 focus:ring-bamboo-500/50 focus:border-bamboo-500/50 outline-none transition-all placeholder-white/30 resize-none"
                         placeholder="Share your experience with this product..."
                         required
                     />
@@ -103,9 +103,9 @@ export const ReviewForm: React.FC<ReviewFormProps> = ({ onSubmit }) => {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full py-3 rounded-md font-bold text-white transition-colors ${isSubmitting
-                        ? 'bg-earth-400 cursor-not-allowed'
-                        : 'bg-bamboo-600 hover:bg-bamboo-700'
+                    className={`dope-button w-full ${isSubmitting
+                        ? 'opacity-50 cursor-not-allowed'
+                        : 'bg-bamboo-600/60 hover:bg-bamboo-500/80'
                         }`}
                 >
                     {isSubmitting ? 'Submitting...' : 'Submit Review'}

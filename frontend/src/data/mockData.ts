@@ -105,8 +105,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 12000.00,
         category_id: 1,
         variants: [
-            createVariant(101, 1, "Double (7x8ft)", "Red/Multicolor", 12000.00, 5, "/images/1_lRUm2IW.webp"), // Traditional hand-stitched quilt
-            createVariant(102, 1, "Single (5x7ft)", "Blue/Multicolor", 8500.00, 8, "/images/Gemini_Generated_Image_ia1n70ia1n70ia1n.png") // Intricate textile pattern
+            createVariant(101, 1, "Double (7x8ft)", "Red/Multicolor", 12000.00, 5, "/images/products/1_lRUm2IW.webp"), // Traditional hand-stitched quilt
+            createVariant(102, 1, "Single (5x7ft)", "Blue/Multicolor", 8500.00, 8, "/images/products/Gemini_Generated_Image_ia1n70ia1n70ia1n.png") // Intricate textile pattern
         ]
     },
     {
@@ -116,7 +116,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 4500.00,
         category_id: 4,
         variants: [
-            createVariant(201, 2, "Medium", "Natural", 4500.00, 20, "/images/Gemini_Generated_Image_6ztb2y6ztb2y6ztb.png") // Artisan bamboo wicker
+            createVariant(201, 2, "Medium", "Natural", 4500.00, 20, "/images/products/Gemini_Generated_Image_6ztb2y6ztb2y6ztb.png") // Artisan bamboo wicker
         ]
     },
     {
@@ -126,7 +126,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 25000.00,
         category_id: 1,
         variants: [
-            createVariant(301, 3, "Free Size", "Off-White/Gold", 25000.00, 3, "/images/SALOAR_KAMIJ_SET_BLUE_PRINT.webp") // Luxurious Jamdani silk/cotton weaving
+            createVariant(301, 3, "Free Size", "Off-White/Gold", 25000.00, 3, "/images/products/SALOAR_KAMIJ_SET_BLUE_PRINT.webp") // Luxurious Jamdani silk/cotton weaving
         ]
     },
     {
@@ -136,7 +136,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 3000.00,
         category_id: 11,
         variants: [
-            createVariant(401, 4, "12 inch", "Terracotta", 3000.00, 15, "/images/Gemini_Generated_Image_3kkhxj3kkhxj3kkh.png") // Traditional clay pottery with motifs
+            createVariant(401, 4, "12 inch", "Terracotta", 3000.00, 15, "/images/products/Gemini_Generated_Image_3kkhxj3kkhxj3kkh.png") // Traditional clay pottery with motifs
         ]
     },
     {
@@ -146,8 +146,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 8000.00,
         category_id: 4,
         variants: [
-            createVariant(501, 5, "1 Meter", "White", 8000.00, 10, "/images/Gemini_Generated_Image_ia1n70ia1n70ia1n.png"),
-            createVariant(502, 5, "2 Meters", "Cream", 15000.00, 8, "/images/SALOAR_KAMIJ_SET_BLUE_PRINT.webp")
+            createVariant(501, 5, "1 Meter", "White", 8000.00, 10, "/images/products/Gemini_Generated_Image_ia1n70ia1n70ia1n.png"),
+            createVariant(502, 5, "2 Meters", "Cream", 15000.00, 8, "/images/products/SALOAR_KAMIJ_SET_BLUE_PRINT.webp")
         ]
     },
     {
@@ -157,8 +157,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 5500.00,
         category_id: 8,
         variants: [
-            createVariant(601, 6, "Medium (2x3ft)", "Multicolor", 5500.00, 12, "/images/Gemini_Generated_Image_4fymxd4fymxd4fym.png"),
-            createVariant(602, 6, "Large (3x4ft)", "Multicolor", 8500.00, 7, "/images/Gemini_Generated_Image_vda6tsvda6tsvda6.png")
+            createVariant(601, 6, "Medium (2x3ft)", "Multicolor", 5500.00, 12, "/images/products/Gemini_Generated_Image_4fymxd4fymxd4fym.png"),
+            createVariant(602, 6, "Large (3x4ft)", "Multicolor", 8500.00, 7, "/images/products/Gemini_Generated_Image_vda6tsvda6tsvda6.png")
         ]
     },
     {
@@ -168,8 +168,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 2800.00,
         category_id: 12,
         variants: [
-            createVariant(701, 7, "Set of 2 Bowls", "Blue", 2800.00, 20, "/images/Gemini_Generated_Image_4l77o54l77o54l77.png"),
-            createVariant(702, 7, "Set of 4 Bowls", "Blue", 5200.00, 15, "/images/Gemini_Generated_Image_6b73oc6b73oc6b73.png")
+            createVariant(701, 7, "Set of 2 Bowls", "Blue", 2800.00, 20, "/images/products/Gemini_Generated_Image_4l77o54l77o54l77.png"),
+            createVariant(702, 7, "Set of 4 Bowls", "Blue", 5200.00, 15, "/images/products/Gemini_Generated_Image_6b73oc6b73oc6b73.png")
         ]
     },
     {
@@ -179,9 +179,9 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 3200.00,
         category_id: 16,
         variants: [
-            createVariant(801, 8, "Small (8 inch)", "Natural", 3200.00, 25, "/images/Gemini_Generated_Image_6ztb2y6ztb2y6ztb.png"),
-            createVariant(802, 8, "Medium (10 inch)", "Natural", 4500.00, 20, "/images/Gemini_Generated_Image_ty5znnty5znnty5z.png"),
-            createVariant(803, 8, "Large (12 inch)", "Natural", 6000.00, 15, "/images/Gemini_Generated_Image_azlfniazlfniazlf.png")
+            createVariant(801, 8, "Small (8 inch)", "Natural", 3200.00, 25, "/images/products/Gemini_Generated_Image_6ztb2y6ztb2y6ztb.png"),
+            createVariant(802, 8, "Medium (10 inch)", "Natural", 4500.00, 20, "/images/products/Gemini_Generated_Image_ty5znnty5znnty5z.png"),
+            createVariant(803, 8, "Large (12 inch)", "Natural", 6000.00, 15, "/images/products/Gemini_Generated_Image_azlfniazlfniazlf.png")
         ]
     },
     {
@@ -191,8 +191,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 4200.00,
         category_id: 19,
         variants: [
-            createVariant(901, 9, "Small", "Antique Brass", 4200.00, 10, "/images/Gemini_Generated_Image_dn98iadn98iadn98.png"),
-            createVariant(902, 9, "Medium", "Antique Brass", 6500.00, 8, "/images/Gemini_Generated_Image_8zhtgl8zhtgl8zht.png")
+            createVariant(901, 9, "Small", "Antique Brass", 4200.00, 10, "/images/products/Gemini_Generated_Image_dn98iadn98iadn98.png"),
+            createVariant(902, 9, "Medium", "Antique Brass", 6500.00, 8, "/images/products/Gemini_Generated_Image_8zhtgl8zhtgl8zht.png")
         ]
     },
     {
@@ -202,8 +202,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 2200.00,
         category_id: 22,
         variants: [
-            createVariant(1001, 10, "One Size", "Red & Gold", 2200.00, 18, "/images/Gemini_Generated_Image_4pluo34pluo34plu.png"),
-            createVariant(1002, 10, "One Size", "Green & Gold", 2200.00, 16, "/images/image-12.png")
+            createVariant(1001, 10, "One Size", "Red & Gold", 2200.00, 18, "/images/products/Gemini_Generated_Image_4pluo34pluo34plu.png"),
+            createVariant(1002, 10, "One Size", "Green & Gold", 2200.00, 16, "/images/products/image-12.png")
         ]
     },
     {
@@ -213,8 +213,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 6500.00,
         category_id: 25,
         variants: [
-            createVariant(1101, 11, "Free Size", "Red with Gold Border", 6500.00, 12, "/images/1_lRUm2IW.webp"),
-            createVariant(1102, 11, "Free Size", "Green with Silver Border", 6500.00, 10, "/images/3_RumOBFr.webp")
+            createVariant(1101, 11, "Free Size", "Red with Gold Border", 6500.00, 12, "/images/products/1_lRUm2IW.webp"),
+            createVariant(1102, 11, "Free Size", "Green with Silver Border", 6500.00, 10, "/images/products/3_RumOBFr.webp")
         ]
     },
     {
@@ -224,8 +224,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 7800.00,
         category_id: 29,
         variants: [
-            createVariant(1201, 12, "Medium (10 inch)", "Natural Wood", 7800.00, 8, "/images/Screenshot-2025-09-06-184123.png"),
-            createVariant(1202, 12, "Large (15 inch)", "Dark Mahogany", 12500.00, 5, "/images/Screenshot-2025-09-06-184742.png")
+            createVariant(1201, 12, "Medium (10 inch)", "Natural Wood", 7800.00, 8, "/images/products/Screenshot-2025-09-06-184123.png"),
+            createVariant(1202, 12, "Large (15 inch)", "Dark Mahogany", 12500.00, 5, "/images/products/Screenshot-2025-09-06-184742.png")
         ]
     },
     {
@@ -235,8 +235,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 3800.00,
         category_id: 35,
         variants: [
-            createVariant(1301, 13, "One Size", "Tan Leather", 3800.00, 14, "/images/Screenshot-2025-09-06-184154-200x200.png"),
-            createVariant(1302, 13, "One Size", "Brown Leather", 3800.00, 12, "/images/Screenshot-2025-09-06-184206-200x200.png")
+            createVariant(1301, 13, "One Size", "Tan Leather", 3800.00, 14, "/images/products/Screenshot-2025-09-06-184154-200x200.png"),
+            createVariant(1302, 13, "One Size", "Brown Leather", 3800.00, 12, "/images/products/Screenshot-2025-09-06-184206-200x200.png")
         ]
     },
     {
@@ -246,8 +246,8 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 5200.00,
         category_id: 26,
         variants: [
-            createVariant(1401, 14, "Medium", "White", 5200.00, 10, "/images/SALOAR_KAMIJ_SET_BLUE_PRINT.webp"),
-            createVariant(1402, 14, "Medium", "Cream", 5200.00, 9, "/images/Gemini_Generated_Image_ia1n70ia1n70ia1n.png")
+            createVariant(1401, 14, "Medium", "White", 5200.00, 10, "/images/products/SALOAR_KAMIJ_SET_BLUE_PRINT.webp"),
+            createVariant(1402, 14, "Medium", "Cream", 5200.00, 9, "/images/products/Gemini_Generated_Image_ia1n70ia1n70ia1n.png")
         ]
     },
     {
@@ -257,7 +257,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 12000.00,
         category_id: 3,
         variants: [
-            createVariant(101, 1, "Double (7x8ft)", "Red/Multicolor", 12000.00, 5, "/images/1_lRUm2IW.webp")
+            createVariant(101, 1, "Double (7x8ft)", "Red/Multicolor", 12000.00, 5, "/images/products/1_lRUm2IW.webp")
         ]
     },
     {
@@ -267,7 +267,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 4500.00,
         category_id: 15,
         variants: [
-            createVariant(201, 2, "Medium", "Natural", 4500.00, 20, "/images/Gemini_Generated_Image_6ztb2y6ztb2y6ztb.png")
+            createVariant(201, 2, "Medium", "Natural", 4500.00, 20, "/images/products/Gemini_Generated_Image_6ztb2y6ztb2y6ztb.png")
         ]
     },
     {
@@ -277,7 +277,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 25000.00,
         category_id: 2,
         variants: [
-            createVariant(301, 3, "Free Size", "Off-White/Gold", 25000.00, 3, "/images/SALOAR_KAMIJ_SET_BLUE_PRINT.webp")
+            createVariant(301, 3, "Free Size", "Off-White/Gold", 25000.00, 3, "/images/products/SALOAR_KAMIJ_SET_BLUE_PRINT.webp")
         ]
     },
     {
@@ -287,7 +287,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 3000.00,
         category_id: 11,
         variants: [
-            createVariant(401, 4, "12 inch", "Terracotta", 3000.00, 15, "/images/Gemini_Generated_Image_3kkhxj3kkhxj3kkh.png")
+            createVariant(401, 4, "12 inch", "Terracotta", 3000.00, 15, "/images/products/Gemini_Generated_Image_3kkhxj3kkhxj3kkh.png")
         ]
     },
     {
@@ -297,7 +297,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 8000.00,
         category_id: 4,
         variants: [
-            createVariant(501, 5, "1 Meter", "White", 8000.00, 10, "/images/Gemini_Generated_Image_ia1n70ia1n70ia1n.png")
+            createVariant(501, 5, "1 Meter", "White", 8000.00, 10, "/images/products/Gemini_Generated_Image_ia1n70ia1n70ia1n.png")
         ]
     },
     {
@@ -307,7 +307,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 5500.00,
         category_id: 8,
         variants: [
-            createVariant(601, 6, "Medium (2x3ft)", "Multicolor", 5500.00, 12, "/images/Gemini_Generated_Image_4fymxd4fymxd4fym.png")
+            createVariant(601, 6, "Medium (2x3ft)", "Multicolor", 5500.00, 12, "/images/products/Gemini_Generated_Image_4fymxd4fymxd4fym.png")
         ]
     },
     {
@@ -317,7 +317,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 2800.00,
         category_id: 12,
         variants: [
-            createVariant(701, 7, "Set of 2 Bowls", "Blue", 2800.00, 20, "/images/Gemini_Generated_Image_4l77o54l77o54l77.png")
+            createVariant(701, 7, "Set of 2 Bowls", "Blue", 2800.00, 20, "/images/products/Gemini_Generated_Image_4l77o54l77o54l77.png")
         ]
     },
     {
@@ -327,7 +327,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 3200.00,
         category_id: 16,
         variants: [
-            createVariant(801, 8, "Small (8 inch)", "Natural", 3200.00, 25, "/images/Gemini_Generated_Image_ty5znnty5znnty5z.png")
+            createVariant(801, 8, "Small (8 inch)", "Natural", 3200.00, 25, "/images/products/Gemini_Generated_Image_ty5znnty5znnty5z.png")
         ]
     },
     {
@@ -337,7 +337,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 4200.00,
         category_id: 19,
         variants: [
-            createVariant(901, 9, "Small", "Antique Brass", 4200.00, 10, "/images/Gemini_Generated_Image_dn98iadn98iadn98.png")
+            createVariant(901, 9, "Small", "Antique Brass", 4200.00, 10, "/images/products/Gemini_Generated_Image_dn98iadn98iadn98.png")
         ]
     },
     {
@@ -347,7 +347,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 2200.00,
         category_id: 22,
         variants: [
-            createVariant(1001, 10, "One Size", "Red & Gold", 2200.00, 18, "/images/Gemini_Generated_Image_4pluo34pluo34plu.png")
+            createVariant(1001, 10, "One Size", "Red & Gold", 2200.00, 18, "/images/products/Gemini_Generated_Image_4pluo34pluo34plu.png")
         ]
     },
     {
@@ -357,7 +357,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 6500.00,
         category_id: 25,
         variants: [
-            createVariant(1101, 11, "Free Size", "Red with Gold Border", 6500.00, 12, "/images/3_RumOBFr.webp")
+            createVariant(1101, 11, "Free Size", "Red with Gold Border", 6500.00, 12, "/images/products/3_RumOBFr.webp")
         ]
     },
     {
@@ -367,7 +367,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 7800.00,
         category_id: 29,
         variants: [
-            createVariant(1201, 12, "Medium (10 inch)", "Natural Wood", 7800.00, 8, "/images/Screenshot-2025-09-06-184123.png")
+            createVariant(1201, 12, "Medium (10 inch)", "Natural Wood", 7800.00, 8, "/images/products/Screenshot-2025-09-06-184123.png")
         ]
     },
     {
@@ -377,7 +377,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 3800.00,
         category_id: 35,
         variants: [
-            createVariant(1301, 13, "One Size", "Tan Leather", 3800.00, 14, "/images/Screenshot-2025-09-06-184154-200x200.png")
+            createVariant(1301, 13, "One Size", "Tan Leather", 3800.00, 14, "/images/products/Screenshot-2025-09-06-184154-200x200.png")
         ]
     },
     {
@@ -387,7 +387,7 @@ const rawProducts: (Product & { variants: (ProductVariant & { images: ProductIma
         base_price: 5200.00,
         category_id: 26,
         variants: [
-            createVariant(1401, 14, "Medium", "White", 5200.00, 10, "/images/Gemini_Generated_Image_vda6tsvda6tsvda6.png")
+            createVariant(1401, 14, "Medium", "White", 5200.00, 10, "/images/products/Gemini_Generated_Image_vda6tsvda6tsvda6.png")
         ]
     },
     {

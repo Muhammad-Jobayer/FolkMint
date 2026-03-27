@@ -1,5 +1,8 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import type { CartItem, ProductVariant, Product } from '../types/schema';
+import { apiRequest } from '../utils/api';
+import { useToast } from './ToastContext';
+import { useAuth } from './AuthContext';
 
 // Extended CartItem to include product details for display
 export interface CartItemWithDetails extends CartItem {
@@ -13,9 +16,10 @@ export interface CartItemWithDetails extends CartItem {
 
 interface CartContextType {
     items: CartItemWithDetails[];
-    addToCart: (variant: ProductVariant, product: Product, quantity: number, image?: string) => void;
-    removeFromCart: (variantId: number) => void;
-    updateQuantity: (variantId: number, quantity: number) => void;
+    loading: boolean;
+    addToCart: (variant: ProductVariant, product: Product, quantity: number, image?: string) => Promise<void>;
+    removeFromCart: (variantId: number) => Promise<void>;
+    updateQuantity: (variantId: number, quantity: number) => Promise<void>;
     cartTotal: number;
     itemCount: number;
     clearCart: () => void;
@@ -25,49 +29,50 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [items, setItems] = useState<CartItemWithDetails[]>([]);
-    const [userId, setUserId] = useState<number | null>(null);
+    const [loading, setLoading] = useState<boolean>(false);
+    const { showToast } = useToast();
+    const { user, isAuthenticated } = useAuth();
 
-    // Track user from local storage
+    const fetchCart = useCallback(async () => {
+        if (!isAuthenticated) {
+            setItems([]);
+            return;
+        }
+        
+        setLoading(true);
+        const { success, data, error } = await apiRequest<{ items: any[] }>('/cart');
+        setLoading(false);
+        
+        if (success && data?.items) {
+            setItems(prev => {
+                // Build a map of currently-known images (from optimistic updates)
+                const localImageMap = new Map(prev.map(i => [i.variant_id, i.image]));
+                return data.items.map((item: any) => ({
+                    cart_item_id: item.cart_item_id,
+                    cart_id: item.cart_id,
+                    variant_id: item.variant_id,
+                    quantity: item.quantity,
+                    productName: item.name,
+                    price: Number(item.price),
+                    // Prefer the server image if available, otherwise keep the locally cached image
+                    image: item.image || localImageMap.get(item.variant_id) || '',
+                    size: item.size || '',
+                    color: item.color || '',
+                    product_id: item.product_id
+                }));
+            });
+        } else if (error) {
+            console.error('Failed to fetch cart:', error);
+        }
+    }, [isAuthenticated]);
+
     useEffect(() => {
-        const checkUser = () => {
-            const authUser = JSON.parse(localStorage.getItem('folkmint_user') || 'null');
-            if (authUser?.user_id && authUser.user_id !== userId) {
-                setUserId(authUser.user_id);
-                fetchCart(authUser.user_id);
-            } else if (!authUser && userId !== null) {
-                setUserId(null);
-                setItems([]);
-            }
-        };
-
-        const fetchCart = async (uid: number) => {
-            try {
-                const res = await fetch(`/api/cart/${uid}`);
-                const data = await res.json();
-                if (data.items && data.items.length > 0) {
-                    setItems(data.items.map((item: any) => ({
-                        cart_item_id: item.cart_item_id,
-                        cart_id: item.cart_id,
-                        variant_id: item.variant_id,
-                        quantity: item.quantity,
-                        productName: item.name,
-                        price: item.price,
-                        image: item.image || '',
-                        size: item.size || '',
-                        color: item.color || '',
-                        product_id: item.product_id
-                    })));
-                }
-            } catch (err) {
-                console.error('Failed to fetch cart:', err);
-            }
-        };
-
-        checkUser();
-        // Add listener for login/logout events if needed, for now just poll or check standard
-        const interval = setInterval(checkUser, 2000);
-        return () => clearInterval(interval);
-    }, [userId]);
+        if (isAuthenticated) {
+            fetchCart();
+        } else {
+            setItems([]);
+        }
+    }, [isAuthenticated, fetchCart]);
 
     // Calculate totals
     const cartTotal = items.reduce((total, item) => total + (item.price * (item.quantity || 1)), 0);
@@ -76,17 +81,18 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const addToCart = async (variant: ProductVariant, product: Product, quantity: number, image?: string) => {
         const newItem: CartItemWithDetails = {
             cart_item_id: Date.now(),
-            cart_id: 1,
+            cart_id: 0,
             variant_id: variant.variant_id,
             quantity: quantity,
             productName: product.name || 'Product',
-            price: variant.price || product.base_price || 0,
+            price: Number(variant.price || product.base_price || 0),
             image: image,
             size: variant.size || '',
             color: variant.color || '',
             product_id: product.product_id
         };
 
+        // Optimistic UI update
         setItems(prev => {
             const existingItem = prev.find(item => item.variant_id === variant.variant_id);
             if (existingItem) {
@@ -99,48 +105,52 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
             return [...prev, newItem];
         });
 
-        // Backend Sync
-        if (userId) {
-            try {
-                await fetch(`/api/cart/add?user_id=${userId}`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ variant_id: variant.variant_id, quantity })
-                });
-            } catch (err) {
-                console.error('Failed to sync add to cart:', err);
+        showToast(`${product.name} added to cart!`, 'success');
+
+        if (isAuthenticated) {
+            const { success, error } = await apiRequest('/cart/add', {
+                method: 'POST',
+                body: JSON.stringify({ variant_id: variant.variant_id, quantity })
+            });
+            if (!success) {
+                showToast(`Sync error: ${error}`, 'error');
+                fetchCart();
+            } else {
+                fetchCart();
             }
         }
     };
 
     const removeFromCart = async (variantId: number) => {
         const itemToRemove = items.find(i => i.variant_id === variantId);
-        setItems(prev => prev.filter(item => item.variant_id !== variantId));
+        if (!itemToRemove) return;
 
-        // Backend Sync
-        if (userId && itemToRemove?.cart_item_id) {
-            try {
-                await fetch(`/api/cart/item/${itemToRemove.cart_item_id}`, { method: 'DELETE' });
-            } catch (err) {
-                console.error('Failed to sync remove from cart:', err);
+        setItems(prev => prev.filter(item => item.variant_id !== variantId));
+        showToast('Item removed from cart', 'info');
+
+        if (isAuthenticated && itemToRemove.cart_item_id) {
+            const { success, error } = await apiRequest(`/cart/item/${itemToRemove.cart_item_id}`, { method: 'DELETE' });
+            if (!success) {
+                showToast('Failed to sync removal', 'error');
+                fetchCart();
             }
         }
     };
 
     const updateQuantity = async (variantId: number, quantity: number) => {
         if (quantity < 1) return;
+        
         setItems(prev => prev.map(item =>
             item.variant_id === variantId ? { ...item, quantity } : item
         ));
 
-        // Backend Sync
-        if (userId) {
+        if (isAuthenticated) {
             const itemToUpdate = items.find(i => i.variant_id === variantId);
             if (itemToUpdate?.cart_item_id) {
-                try {
-                    await fetch(`/api/cart/item/${itemToUpdate.cart_item_id}?quantity=${quantity}`, { method: 'PUT' });
-                } catch (err) {
-                    console.error('Failed to sync update quantity:', err);
+                const { success, error } = await apiRequest(`/cart/item/${itemToUpdate.cart_item_id}?quantity=${quantity}`, { method: 'PUT' });
+                if (!success) {
+                    showToast('Failed to update quantity', 'error');
+                    fetchCart();
                 }
             }
         }
@@ -151,7 +161,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     };
 
     return (
-        <CartContext.Provider value={{ items, addToCart, removeFromCart, updateQuantity, cartTotal, itemCount, clearCart }}>
+        <CartContext.Provider value={{ items, loading, addToCart, removeFromCart, updateQuantity, cartTotal, itemCount, clearCart }}>
             {children}
         </CartContext.Provider>
     );
