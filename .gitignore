@@ -29,7 +29,6 @@ lib/
 lib64/
 parts/
 sdist/
-var/
 wheels/
 *.egg-info/
 .installed.cfg
@@ -49,3 +48,10 @@ Thumbs.db
 backend/.env
 frontend/.env
 old_stuff/
+**/node_modules/
+**/dist/
+**/build/
+**/venv/
+**/env/
+**/*.pyc
+**/__pycache__/

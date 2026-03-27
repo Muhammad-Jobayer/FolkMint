@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'http://localhost:8000/api';
+export const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 const apiCache = new Map<string, { data: any; timestamp: number }>();
 
@@ -64,8 +64,9 @@ export async function apiRequest<T>(
 export const getImageUrl = (url: string | null | undefined) => {
   if (!url) return '';
   if (url.startsWith('http')) return url;
-  if (url.startsWith('/uploads')) return `http://localhost:8000${url}`;
-  if (url.startsWith('/images/catagorized img/')) return `http://localhost:8000${url}`;
+  const baseUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+  if (url.startsWith('/uploads')) return `${baseUrl}${url}`;
+  if (url.startsWith('/images/catagorized img/')) return `${baseUrl}${url}`;
   return url;
 };
 
